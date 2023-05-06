@@ -1,4 +1,4 @@
-function C = C(a, phi_deg)
+function C = Rot(a, phi_deg)
     % Construct a principal rotation.
     % The matrix C represents an affine transformation from one frame to
     % another which is offset by a rotation about a principal axis (a) in the
@@ -16,7 +16,6 @@ function C = C(a, phi_deg)
     s = sin(phi_rad);
 
     % Construct transformation about a principal axis (1,2,3).
-    C = zeros(3);
     if a == 1
         C = [1, 0, 0; 0, c, s; 0, -s, c];
     elseif a == 2
