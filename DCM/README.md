@@ -33,7 +33,7 @@ We can say that $C_{ab}$ describes the orientation or attitude of $\mathcal{F}_a
 We can consider a few special cases of transferring between  $\underrightarrow{\mathcal{F}_a}$ being displaced from $\underrightarrow{\mathcal{F}_b}$ by a rotation through an angle $\theta$ (using the right-hand rule) about one of the principal axes.
 
 <p align="center">
-    <img src="images/coordinates.png" width="700" height="500">
+    <img src="images/coordinates.png" width="700" height="400">
 </p>
 
 Let's consider the rotation about $\underrightarrow{b_1}$. This will make $\underrightarrow{b_1}$ parallel to $\underrightarrow{a_1}$ and the rotation matrix reduces to 
@@ -54,7 +54,8 @@ $$
 C_{2} \equiv
 \begin{bmatrix}
 \cos{(\theta)} & 0 & -\sin{(\theta)} \\\\
-        0  & 1 & 0 \\ \\\sin{(\theta)} & 0 & \cos{(\theta)} \end{bmatrix}, \; \; C_{3} \equiv
+        0  & 1 & 0 \\ \\\sin{(\theta)} & 0 & \cos{(\theta)} \end{bmatrix}, 
+         C_{3} \equiv
 \begin{bmatrix}
 \cos{(\theta)} & \sin{(\theta)} & 0 \\\\
         -\sin{(\theta)}  & \cos{(\theta)} & 0 \\\\ 0 & 0 & 1 \end{bmatrix}
