@@ -64,7 +64,7 @@ These are the three principal rotation matrices.
 
 We can use the ```PrinRot(a,phi)``` to construct the principal rotation matrix where ```a``` is the principal axis (1,2,3) and ```phi``` the displacement in degrees. 
 
-[Example]()
+[Example](https://github.com/World-Space-Community/ADCS-Software/blob/main/DCM/example.m)
 
 ## Euler Rotation
 
@@ -79,4 +79,4 @@ The rotation axis $\underrightarrow{a}$ can be expressed in either the initial o
 
 We can use the ```AxisAngle(a,phi)```, where ```a``` is the axis we want to rotate about  and ```phi``` the displacement in degrees. 
 
-[Example]()
+[Example](https://github.com/World-Space-Community/ADCS-Software/blob/main/DCM/example.m)
