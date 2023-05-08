@@ -5,35 +5,35 @@
 The vector $\underrightarrow{v}$ can have many equivalent expressions in different frames. 
 
 $$
-\underrightarrow{v} = \underrightarrow{\mathcal{F}_a^T} \bold{v_a} = \underrightarrow{\mathcal{F}_b^T} \bold{v_b}
+\underrightarrow{v} = \underrightarrow{\mathcal{F}_a^T} v_a = \underrightarrow{\mathcal{F}_b^T} v_b
 $$
 
-We can find $\bold{v_a}$ from $\bold{v_b}$ by change $\bold{v_b}$ from frame $\underrightarrow{\mathcal{F}_b}$ to frame $\underrightarrow{\mathcal{F}_a}$
+We can find $v_a$ from $v_b$ by change $v_b$ from frame $\underrightarrow{\mathcal{F}_b}$ to frame $\underrightarrow{\mathcal{F}_a}$
 
 $$
-\bold{v_a} = \underrightarrow{\mathcal{F}_a} \cdot \underrightarrow{\mathcal{F}_b^{T}} \bold{v_b}
+v_a = \underrightarrow{\mathcal{F}_a} \cdot \underrightarrow{\mathcal{F}_b^{T}} v_b
 $$
 
 We can define 
 
 $$
-\bold{C_{ab}} \equiv \underrightarrow{\mathcal{F}_a} \cdot \underrightarrow{\mathcal{F}_b^{T}}
+C_{ab} \equiv \underrightarrow{\mathcal{F}_a} \cdot \underrightarrow{\mathcal{F}_b^{T}}
 $$
 
 as the rotation matrix from frame $\underrightarrow{\mathcal{F}_b}$ to frame $\underrightarrow{\mathcal{F}_a}$; hence
 
 $$
-\bold{v_a} = \bold{C_{ab}} \bold{v_{b}}
+v_a = C_{ab} v_{b}
 $$
 
-We can say that $\bold{C_{ab}}$ describes the orientation or attitude of $\mathcal{F}_a$ with respect to $\mathcal{F}_b$.
+We can say that $C_{ab}$ describes the orientation or attitude of $\mathcal{F}_a$ with respect to $\mathcal{F}_b$.
 
 ## Principal Rotations
 
 We can consider a few special cases of transferring between  $\underrightarrow{\mathcal{F}_a}$ being displaced from $\underrightarrow{\mathcal{F}_b}$ by a rotation through an angle $\theta$ (using the right-hand rule) about one of the principal axes.
 
 <p align="center">
-    <img src="images/coordinates.png" width="700" height="120">
+    <img src="images/coordinates.png" width="700" height="500">
 </p>
 
 Let's consider the rotation about $\underrightarrow{b_1}$. This will make $\underrightarrow{b_1}$ parallel to $\underrightarrow{a_1}$ and the rotation matrix reduces to 
@@ -54,7 +54,7 @@ $$
 C_{2} \equiv
 \begin{bmatrix}
 \cos{(\theta)} & 0 & -\sin{(\theta)} \\\\
-        0  & 1 & 0 \\ \\\sin{(\theta)} & 0 & \cos{(\theta)} \end{bmatrix}, \: \: C_{3} \equiv
+        0  & 1 & 0 \\ \\\sin{(\theta)} & 0 & \cos{(\theta)} \end{bmatrix}, \; \; C_{3} \equiv
 \begin{bmatrix}
 \cos{(\theta)} & \sin{(\theta)} & 0 \\\\
         -\sin{(\theta)}  & \cos{(\theta)} & 0 \\\\ 0 & 0 & 1 \end{bmatrix}
@@ -72,7 +72,7 @@ Euler's Theorem provides a way to represent rotational transformations as a rota
 
 Directional cosine matrices can also be expressed as Euler-axis rotations about a unit-normal axis $\underrightarrow{a}$ and a rotation angle $\phi$
 $$
-    C(a,\phi) = \cos\phi \bold{I} + (1-\cos \phi)aa^{T} - sin\phi \; a^{\times}
+    C(a,\phi) = \cos\phi I + (1-\cos \phi)aa^{T} - sin\phi \; a^{\times}
 $$
 
 The rotation axis $\underrightarrow{a}$ can be expressed in either the initial or final frame of the transformation.
