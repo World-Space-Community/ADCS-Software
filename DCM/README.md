@@ -73,7 +73,7 @@ Euler's Theorem provides a way to represent rotational transformations as a rota
 
 Directional cosine matrices can also be expressed as Euler-axis rotations about a unit-normal axis $\underrightarrow{a}$ and a rotation angle $\phi$
 $$
-    C(a,\phi) = \cos\phi I + (1-\cos \phi)aa^{T} - sin\phi \; a^{\times}
+    C(a,\phi) = \cos\phi I + (1-\cos \phi)aa^{T} - sin\phi  a^{\times}
 $$
 
 The rotation axis $\underrightarrow{a}$ can be expressed in either the initial or final frame of the transformation.
